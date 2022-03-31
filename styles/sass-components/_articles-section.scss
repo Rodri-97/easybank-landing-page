@@ -10,7 +10,7 @@
 
     .articles {
         @include flexCenter(column);
-        gap: 20px;
+        gap: 50px;
 
         .article {
             .article-img {
