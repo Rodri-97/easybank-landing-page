@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background: white;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
+    border: 3px solid blue;
+
+    .icon-container {
+        @include flexCenter(row);
+
+        .hamburger-icon, .close-icon {
+            cursor: pointer;
+        }
+
+        .close-icon {
+            display: none;
+        }
+    }
+
+    .nav {
+        display: none;
+    }
+}

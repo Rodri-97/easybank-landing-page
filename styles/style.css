@@ -1,9 +1,58 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body {
-  background: red;
+body button {
+  cursor: pointer;
+}
+
+body .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  background: white;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  border: 3px solid blue;
+}
+
+body .header .icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .header .icon-container .hamburger-icon, body .header .icon-container .close-icon {
+  cursor: pointer;
+}
+
+body .header .icon-container .close-icon {
+  display: none;
+}
+
+body .header .nav {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
