@@ -1,3 +1,10 @@
+$darkBlue: hsl(233, 26%, 24%);
+$grayishBlue: hsl(233, 8%, 62%);
+$limeGreen: hsl(136, 65%, 51%);
+$brightCyan: hsl(192, 70%, 51%);
+$brighterLimeGreen: hsl(136, 65%, 71%);
+$brighterCyan: hsl(192, 70%, 71%);
+
 @font-face {
     font-family: "Public Sans";
     src: url("../fonts/Public_Sans/PublicSans-VariableFont_wght.ttf");
@@ -15,11 +22,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Public Sans";
+    font-weight: 300;
 }
 
 body {
-    button {
+    .request-invite-btn {
         cursor: pointer;
+        background: linear-gradient(to right, $limeGreen, $brightCyan);
+        color: white;
+        font-weight: bold;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 50px;
+
+        &:hover {
+            background: linear-gradient(to right, $brighterLimeGreen, $brighterCyan);
+        }
     }
 
     @import "./sass-components/header";

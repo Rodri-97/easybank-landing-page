@@ -1,16 +1,32 @@
 .intro-section {
-    border: 3px solid red;
-
     display: flex;
     flex-direction: column;
-    position: relative;
 
     .phones-container {
-        border: 3px solid orange;
+        margin-top: -80px;
+        background: url("../images/bg-intro-mobile.svg");
+        background-repeat: none;
+        background-size: 100% calc(100% + 80px);
 
         .phones-img {
-            border: 3px solid green;
             width: 100%;
+        }
+    }
+
+    .text-container {
+        @include flexCenter(column);
+        gap: 30px;
+        padding: 10px 30px 120px 30px;
+
+        h1 {
+            font-size: 45px;
+            color: $darkBlue;
+            text-align: center;
+        }
+
+        p {
+            color: $grayishBlue;
+            text-align: justify;
         }
     }
 }
