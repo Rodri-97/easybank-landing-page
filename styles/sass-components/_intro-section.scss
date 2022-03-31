@@ -1,0 +1,16 @@
+.intro-section {
+    border: 3px solid red;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .phones-container {
+        border: 3px solid orange;
+
+        .phones-img {
+            border: 3px solid green;
+            width: 100%;
+        }
+    }
+}

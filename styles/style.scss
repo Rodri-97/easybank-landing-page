@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Public Sans";
+    src: url("../fonts/Public_Sans/PublicSans-VariableFont_wght.ttf");
+}
+
 @mixin flexCenter($direction) {
     display: flex;
     flex-direction: $direction;
@@ -9,6 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Public Sans";
 }
 
 body {
@@ -17,4 +23,5 @@ body {
     }
 
     @import "./sass-components/header";
+    @import "./sass-components/intro-section";
 }
