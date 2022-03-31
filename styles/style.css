@@ -243,6 +243,11 @@ body .articles-section .articles .article .article-info span, body .articles-sec
 body .articles-section .articles .article .article-info h4 {
   color: #2d314d;
   font-size: 20px;
+  cursor: pointer;
+}
+
+body .articles-section .articles .article .article-info h4:hover {
+  color: #31d35c;
 }
 
 body .footer {
@@ -284,6 +289,14 @@ body .footer .social-media {
           align-items: center;
 }
 
+body .footer .social-media svg {
+  cursor: pointer;
+}
+
+body .footer .social-media svg:hover path {
+  fill: #31d35c;
+}
+
 body .footer .options {
   color: white;
   display: -webkit-box;
@@ -315,6 +328,14 @@ body .footer .options .option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body .footer .options .option span {
+  cursor: pointer;
+}
+
+body .footer .options .option span:hover {
+  color: #31d35c;
 }
 
 body .footer .copyright {

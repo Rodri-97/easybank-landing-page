@@ -10,6 +10,16 @@
 
     .social-media {
         @include flexCenter(row);
+
+        svg {
+            cursor: pointer;
+
+            &:hover {
+                path {
+                    fill: $limeGreen;
+                }
+            }
+        }
     }
 
     .options {
@@ -18,6 +28,14 @@
 
         .option {
             @include flexCenter(column);
+
+            span {
+                cursor: pointer;
+
+                &:hover {
+                    color: $limeGreen;
+                }
+            }
         }
     }
 
