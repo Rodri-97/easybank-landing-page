@@ -1,0 +1,27 @@
+.footer {
+    background: $darkBlue;
+    padding: 50px 0;
+    @include flexCenter(column);
+    gap: 30px;
+
+    .social-media, .options, .option {
+        gap: 15px;
+    }
+
+    .social-media {
+        @include flexCenter(row);
+    }
+
+    .options {
+        color: white;
+        @include flexCenter(column);
+
+        .option {
+            @include flexCenter(column);
+        }
+    }
+
+    .copyright {
+        color: gray;
+    }
+}
