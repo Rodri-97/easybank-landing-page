@@ -4,6 +4,7 @@ $limeGreen: hsl(136, 65%, 51%);
 $brightCyan: hsl(192, 70%, 51%);
 $brighterLimeGreen: hsl(136, 65%, 71%);
 $brighterCyan: hsl(192, 70%, 71%);
+$lightGrayishBlue: hsl(220, 16%, 96%);
 
 @font-face {
     font-family: "Public Sans";
@@ -42,4 +43,5 @@ body {
 
     @import "./sass-components/header";
     @import "./sass-components/intro-section";
+    @import "./sass-components/why-section";
 }

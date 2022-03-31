@@ -1,0 +1,30 @@
+.why-section {
+    background: $lightGrayishBlue;
+    @include flexCenter(column);
+    padding: 50px 30px;
+
+    h2 {
+        font-size: 35px;
+        color: $darkBlue;
+    }
+
+    p {
+        color: gray;
+        text-align: center;
+    }
+
+    .why-paragraph {
+        margin-top: 20px;
+    }
+
+    .reasons {
+        margin-top: 50px;
+        @include flexCenter(column);
+        gap: 40px;
+
+        .reason {
+            @include flexCenter(column);
+            gap: 20px;
+        }
+    }
+}
