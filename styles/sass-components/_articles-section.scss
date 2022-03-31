@@ -1,0 +1,38 @@
+.articles-section {
+    padding: 100px 30px;
+
+    .articles-section-title {
+        font-size: 35px;
+        color: $darkBlue;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .articles {
+        @include flexCenter(column);
+        gap: 20px;
+
+        .article {
+            .article-img {
+                height: 250px;
+                width: 100%;
+            }
+
+            .article-info {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding: 30px;
+
+                span, p {
+                    color: gray;
+                }
+
+                h4 {
+                    color: $darkBlue;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

@@ -190,4 +190,58 @@ body .why-section .reasons .reason {
           align-items: center;
   gap: 20px;
 }
+
+body .articles-section {
+  padding: 100px 30px;
+}
+
+body .articles-section .articles-section-title {
+  font-size: 35px;
+  color: #2d314d;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+body .articles-section .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+body .articles-section .articles .article .article-img {
+  height: 250px;
+  width: 100%;
+}
+
+body .articles-section .articles .article .article-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+}
+
+body .articles-section .articles .article .article-info span, body .articles-section .articles .article .article-info p {
+  color: gray;
+}
+
+body .articles-section .articles .article .article-info h4 {
+  color: #2d314d;
+  font-size: 20px;
+}
 /*# sourceMappingURL=style.css.map */
