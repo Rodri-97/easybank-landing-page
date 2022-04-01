@@ -8,9 +8,11 @@
     z-index: 1;
     width: 100%;
 
-    .icon-container {
+    .logo-container, .icon-container {
         @include flexCenter(row);
+    }
 
+    .icon-container {
         .hamburger-icon, .close-icon {
             cursor: pointer;
         }
@@ -25,8 +27,10 @@
 
         span {
             color: gray;
-            border: 3px solid transparent;
-            padding: 5px 0;
+            border-top-style: solid;
+            border-top-color: transparent;
+            border-bottom-style: solid;
+            border-bottom-color: transparent;
             cursor: pointer;
 
             &:hover {
@@ -35,17 +39,23 @@
             }
         }
     }
+
+    .button-container {
+        display: none;
+    }
 }
 
 @media all and (max-width: 800px) {
     .header {
         .nav.show-in-mobile {
-            padding: 30px 0;
             @include flexCenter(column);
-            gap: 10px;
+            gap: 20px;
+            padding: 30px 0;
 
-            .request-invite-btn {
-                margin-top: 10px;
+            span {
+                padding: 5px 0;
+                border-top-width: 3px;
+                border-bottom-width: 3px;
             }
         }
 
@@ -76,6 +86,31 @@
 
         .nav {
             grid-area: nav;
+        }
+    }
+}
+
+@media all and (min-width: 800px) {
+    .header {
+        padding: 0;
+        justify-content: space-around;
+
+        .icon-container {
+            display: none;
+        }
+
+        .nav, .button-container {
+            @include flexCenter(row);
+        }
+
+        .nav {
+            gap: 30px;
+
+            span {
+                padding: 20px 0;
+                border-top-width: 5px;
+                border-bottom-width: 5px;
+            }
         }
     }
 }
