@@ -22,5 +22,60 @@
 
     .nav {
         display: none;
+
+        span {
+            color: gray;
+            border: 3px solid transparent;
+            padding: 5px 0;
+            cursor: pointer;
+
+            &:hover {
+                color: black;
+                border-bottom-color: $limeGreen;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 800px) {
+    .header {
+        .nav.show-in-mobile {
+            padding: 30px 0;
+            @include flexCenter(column);
+            gap: 10px;
+
+            .request-invite-btn {
+                margin-top: 10px;
+            }
+        }
+
+        .icon-container {
+            .hamburger-icon.hide {
+                display: none;
+            }
+
+            .close-icon.show {
+                display: block;
+            }
+        }
+    }
+
+    .header.adjust-in-mobile {
+        display: grid;
+        grid-template-areas: 
+        "logo icon"
+        "nav nav";
+
+        .logo-container {
+            grid-area: logo;
+        }
+
+        .icon-container {
+            grid-area: icon;
+        }
+
+        .nav {
+            grid-area: nav;
+        }
     }
 }

@@ -74,6 +74,68 @@ body .header .nav {
   display: none;
 }
 
+body .header .nav span {
+  color: gray;
+  border: 3px solid transparent;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+body .header .nav span:hover {
+  color: black;
+  border-bottom-color: #31d35c;
+}
+
+@media all and (max-width: 800px) {
+  body .header .nav.show-in-mobile {
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  body .header .nav.show-in-mobile .request-invite-btn {
+    margin-top: 10px;
+  }
+  body .header .icon-container .hamburger-icon.hide {
+    display: none;
+  }
+  body .header .icon-container .close-icon.show {
+    display: block;
+  }
+  body .header.adjust-in-mobile {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo icon" "nav nav";
+  }
+  body .header.adjust-in-mobile .logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logo;
+  }
+  body .header.adjust-in-mobile .icon-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: icon;
+  }
+  body .header.adjust-in-mobile .nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: nav;
+  }
+}
+
 body .intro-section {
   display: -webkit-box;
   display: -ms-flexbox;
