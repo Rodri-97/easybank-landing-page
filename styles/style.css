@@ -313,6 +313,7 @@ body .why-section .why-intro {
 body .why-section .why-intro h2 {
   font-size: 35px;
   color: #2d314d;
+  text-align: center;
 }
 
 body .why-section .why-intro .why-paragraph {
