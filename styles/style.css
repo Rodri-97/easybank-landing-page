@@ -338,6 +338,36 @@ body .why-section .reasons .reason {
   gap: 20px;
 }
 
+@media all and (min-width: 800px) {
+  body .why-section {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 100px;
+    gap: 30px;
+  }
+  body .why-section .why-intro {
+    margin-right: 50%;
+  }
+  body .why-section .reasons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body .why-section .reasons .reason {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .why-section p {
+    text-align: left;
+  }
+}
+
 body .articles-section {
   padding: 100px 30px;
 }

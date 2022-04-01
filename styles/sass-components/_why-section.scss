@@ -28,3 +28,28 @@
         }
     }
 }
+
+@media all and (min-width: 800px) {
+    .why-section {
+        align-items: flex-start;
+        padding: 100px;
+        gap: 30px;
+
+        .why-intro {
+            margin-right: 50%;
+        }
+
+        .reasons {
+            flex-direction: row;
+            justify-content: flex-start;
+
+            .reason {
+                align-items: flex-start;
+            }
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+}
