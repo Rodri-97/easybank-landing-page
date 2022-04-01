@@ -3,18 +3,22 @@
     @include flexCenter(column);
     padding: 50px 30px;
 
-    h2 {
-        font-size: 35px;
-        color: $darkBlue;
-    }
-
     p {
         color: gray;
         text-align: center;
     }
 
-    .why-paragraph {
-        margin-top: 20px;
+    .why-intro {
+        @include flexCenter(column);
+
+        h2 {
+            font-size: 35px;
+            color: $darkBlue;
+        }
+    
+        .why-paragraph {
+            margin-top: 20px;
+        }
     }
 
     .reasons {
@@ -37,6 +41,7 @@
 
         .why-intro {
             margin-right: 50%;
+            align-items: flex-start;
         }
 
         .reasons {
