@@ -477,7 +477,24 @@ body .footer .social-media, body .footer .options, body .footer .option {
   gap: 15px;
 }
 
-body .footer .social-media {
+body .footer .logo-and-social-media, body .footer .button-and-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+body .footer .logo-and-social-media .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,11 +510,11 @@ body .footer .social-media {
           align-items: center;
 }
 
-body .footer .social-media svg {
+body .footer .logo-and-social-media .social-media svg {
   cursor: pointer;
 }
 
-body .footer .social-media svg:hover path {
+body .footer .logo-and-social-media .social-media svg:hover path {
   fill: #31d35c;
 }
 
@@ -542,7 +559,47 @@ body .footer .options .option span:hover {
   color: #31d35c;
 }
 
-body .footer .copyright {
+body .footer .button-and-copyright .copyright {
   color: gray;
+}
+
+@media all and (min-width: 800px) {
+  body .footer {
+    padding: 50px 100px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 100px;
+  }
+  body .footer .logo-and-social-media {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 50px;
+  }
+  body .footer .options {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 100px;
+  }
+  body .footer .options .option {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .footer .button-and-copyright {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 /*# sourceMappingURL=style.css.map */

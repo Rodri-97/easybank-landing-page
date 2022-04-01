@@ -8,15 +8,22 @@
         gap: 15px;
     }
 
-    .social-media {
-        @include flexCenter(row);
+    .logo-and-social-media, .button-and-copyright {
+        @include flexCenter(column);
+        gap: 30px;
+    }
 
-        svg {
-            cursor: pointer;
-
-            &:hover {
-                path {
-                    fill: $limeGreen;
+    .logo-and-social-media {
+        .social-media {
+            @include flexCenter(row);
+    
+            svg {
+                cursor: pointer;
+    
+                &:hover {
+                    path {
+                        fill: $limeGreen;
+                    }
                 }
             }
         }
@@ -39,7 +46,37 @@
         }
     }
 
-    .copyright {
-        color: gray;
+    .button-and-copyright {
+        .copyright {
+            color: gray;
+        }
+    }
+}
+
+@media all and (min-width: 800px) {
+    .footer {
+        padding: 50px 100px;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 100px;
+
+        .logo-and-social-media {
+            align-items: flex-start;
+            gap: 50px;
+        }
+
+        .options {
+            flex-direction: row;
+            gap: 100px;
+
+            .option {
+                align-items: flex-start;
+            }
+        }
+
+        .button-and-copyright {
+            flex-grow: 1;
+            align-items: flex-end;
+        }
     }
 }
