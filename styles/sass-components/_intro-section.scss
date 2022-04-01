@@ -30,3 +30,38 @@
         }
     }
 }
+
+@media all and (min-width: 800px) {
+    .intro-section {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+        grid-template-areas: "text phones";
+
+        .phones-container {
+            grid-area: phones;
+            background: url("../images/bg-intro-desktop.svg");
+            background-position: 0px -200px;
+            margin-top: 0;
+            position: relative;
+
+            .phones-img {
+                position: absolute;
+                z-index: 1;
+                margin-left: 200px;
+                width: 80%;
+                height: 120%;
+            }
+        }
+
+        .text-container {
+            grid-area: text;
+            padding-top: 200px;
+            padding-left: 100px;
+            align-items: flex-start;
+
+            h1 {
+                text-align: left;
+            }
+        }
+    }
+}

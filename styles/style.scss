@@ -27,6 +27,8 @@ $lightGrayishBlue: hsl(220, 16%, 96%);
 }
 
 body {
+    overflow-x: hidden;
+
     .request-invite-btn {
         cursor: pointer;
         background: linear-gradient(to right, $limeGreen, $brightCyan);
